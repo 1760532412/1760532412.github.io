@@ -1,0 +1,847 @@
+<!doctype html>
+<html>
+<head>
+<style>
+/*标签属性重置*/
+body,h3,p,dl,dd,ul,li,h4,h5{margin:0; font-weight:normal; padding:0; }
+img{ border:none 0;}
+a{text-decoration:none;}
+li{list-style:none;}
+/*页眉*/
+.header{margin:0 auto; margin-top:20px;}
+.topnav{ width:1324px; margin:0 auto; overflow:hidden;}
+.logo{width:430px; height:62px; background-image:url(images/clip1_03.png); float:left; margin-bottom:18px; margin-left:140px;}
+.rightnav{float:right; margin-top:15px; font-family:'宋体'; font-size:12px; color:#717172; margin-right:140px; width:340px;}
+.header .topnav .rightnav h3{margin-top:15px; margin-left:80px; font-family:'宋体'; font-size:14px; color:#d4003b;}
+.header .topnav .rightnav h3 i{font-family:Arial, Helvetica, sans-serif; font-size:24px;}
+.showbox{width:1324px; height:610px; margin:0 auto; overflow:hidden; position:relative;}
+.column{width:2648px; height:610px; margin:0 auto; position:absolute; overflow:hidden; left:0; top:0;}
+.banner{float:left;}
+.header .mainnav{width:1324px; margin:0 auto; background-image:url(images/clip1_12.png); font-family:'宋体'; font-size:14px;  text-align:center; padding-top:3px; padding-bottom:3px; line-height:41px; color:#d45569;}
+.mainnav a{color:#ffffff;}
+.mainnav a:hover{color:#00F;}
+/*内容*/
+.container{width:1324px;  background-color:#ede8ee; margin:0 auto; position:relative;}
+.main{width:960px;  background-color:#fff5f9; margin:0 auto;}
+.main1{width:960px; height:326px;}
+.hot{width:960px; height:20px; padding-top:8px;}
+.hot a{font-family:'宋体'; font-size:12px; color:#595959;}
+.hot a:hover{color:#a00b04;}
+.hot .remen{color:#a00b04;}
+.main1 img{margin-top:15px;}
+.container .tiaozi{position:absolute; left:172px; top:87px;}
+.main1 .picturebox{overflow:hidden; margin-top:15px;}
+.main1 .picturebox .picture3{float:right;}
+.main1 .picturebox .picture2{margin-left:30px;}
+.main1 .picturebox a{width:300px; height:220px; float:left;}
+.main1 .picturebox a img:hover{border:#900 1px solid;}
+.main1 .picturebox a .shuoming{width:300px; text-align:center; color:#343233; font-family:'微软雅黑'; font-size:16px;}
+.main2{width:960px; height:855px;}
+.main2 .hengtiao1{ display:block; margin-top:10px; margin-bottom:10px;}
+.main2 .picturebox2{margin-top:10px; width:966px;}
+.main2 .picturebox2 .showbox1{ width:318px;  border:dashed 1px #000000;  float:left;}
+.main2 .picturebox2 .showbox1:hover{border:dashed 1px #990000;}
+.main2 .picturebox2 .showbox2{width:318px;  border:dashed 1px #000000;  float:left; }
+.main2 .picturebox2 .showbox2:hover{border:dashed 1px #990000;}
+.main2 .picturebox2 .showbox3{width:318px;  border:dashed 1px #000000;  float:left;}
+.main2 .picturebox2 .showbox3:hover{border:dashed 1px #990000;}
+.main2 .picturebox2 .showbox1 a img{margin:10px;}
+.main2 .picturebox2 .showbox2 a img{margin:10px;}
+.main2 .picturebox2 .showbox3 a img{margin:10px;}
+.main2 .banner1{margin-top:20px; }
+.main2 .hengtiao2{  margin-top:18px;}
+/*选择爱情海婚礼策划 让爱情到永远*/
+.main3{width:960px; height:1146px; margin:0 auto;}
+.main3 .box1{width:960px; overflow:hidden;}
+.main3 img{display:block; margin-left:20px;}
+.main3 .box1 img{float:left;}
+.main3 .box1 .NO1{float:right; width:418px;}
+.main3 .box1 .NO1 img{float:left;}
+.main3 .box1 .NO1 .jieshao1{width:323px; float:right;}
+.main3 .box1 .NO1 .jieshao1 h3{line-height:30px; font-family:'微软雅黑'; font-size:20px; }
+.main3 .box1 .NO1 .jieshao1 p{margin-top:20px; line-height:25px; color:#353535; font-size:16px;}
+.main3 .box1 .NO1 .jieshao1 p span{color:#b80000;}
+
+.main3 .box2{width:960px; overflow:hidden; margin-bottom:33px;}
+.main3 .box2 img{float:right;}
+.main3 .box2 .NO2{float:left; width:418px; margin-top:20px; margin-left:48px;}
+.main3 .box2 .NO2 img{float:left;}
+.main3 .box2 .NO2 .jieshao2{width:323px; float:right;}
+.main3 .box2 .NO2 .jieshao2 h3{line-height:30px; font-family:'微软雅黑'; font-size:20px; margin-top:25px; }
+.main3 .box2 .NO2 .jieshao2 p{margin-top:20px; line-height:25px; color:#353535; font-size:16px;}
+.main3 .box2 .NO2 .jieshao2 p span{color:#b80000;}
+
+.main3 .box3{width:960px; overflow:hidden;}
+.main3 img{display:block; margin-left:20px;}
+.main3 .box3 .xinyu{float:left; margin-left:115px;}
+.main3 .box3 .NO3{float:right; width:418px;}
+.main3 .box3 .NO3 img{float:left;}
+.main3 .box3 .NO3 .jieshao3{width:323px; float:right;}
+.main3 .box3 .NO3 .jieshao3 h3{line-height:30px; font-family:'微软雅黑'; font-size:20px; margin-top:10px; }
+.main3 .box3 .NO3 .jieshao3 p{margin-top:20px; line-height:25px; color:#353535; font-size:16px;}
+.main3 .box3 .NO3 .jieshao3 p span{color:#b80000;}
+
+.main3 .box4{width:960px; overflow:hidden; margin-bottom:33px; margin-top:20px;}
+.main3 .box4 img{float:right;}
+.main3 .box4 .NO4{float:left; width:418px; margin-top:20px; margin-left:48px;}
+.main3 .box4 .NO4 img{float:left;}
+.main3 .box4 .NO4 .jieshao4{width:323px; float:right;}
+.main3 .box4 .NO4 .jieshao4 h3{line-height:30px; font-family:'微软雅黑'; font-size:20px; margin-top:25px; }
+.main3 .box4 .NO4 .jieshao4 p{margin-top:20px; line-height:25px; color:#353535; font-size:16px;}
+.main3 .box4 .NO4 .jieshao4 p span{color:#b80000;}
+/*W——爱情海婚礼策划*/
+.main4{width:960px;  overflow:hidden;}
+.main4 .leftcolumn{width:244px; float:left;}
+.main4 .leftcolumn h3{margin-left:10px;}
+.main4 .leftcolumn .menubox1{overflow:hidden; width:244px;}
+.main4 .leftcolumn .menubox1 .submenu1{  float:left;  line-height:25px; margin-left:26px; width:80px;}
+.main4 .leftcolumn .menubox1 .submenu1 a{color:#606060; font-family:'宋体'; font-size:12px;}
+.main4 .leftcolumn .menubox1 .submenu1 a:hover{color:#be172e;}
+.main4 .leftcolumn .menubox1 .submenu2{float:right; line-height:25px; width:80px; margin-right:30px;}
+.main4 .leftcolumn .menubox1 .submenu2 a{color:#606060; font-family:'宋体'; font-size:12px;}
+.main4 .leftcolumn .menubox1 .submenu2 a:hover{color:#be172e;}
+.main4 .leftcolumn h3{margin-top:15px; margin-bottom:10px; color:#be172e; font-family:'微软雅黑'; font-size:14px;}
+
+.main4 .leftcolumn .menubox2{overflow:hidden; width:244px;}
+.main4 .leftcolumn .menubox2 .submenu1{  float:left;  line-height:25px; margin-left:26px; width:80px;}
+.main4 .leftcolumn .menubox2 .submenu1 a{color:#606060; font-family:'宋体'; font-size:12px;}
+.main4 .leftcolumn .menubox2 .submenu1 a:hover{color:#be172e;}
+.main4 .leftcolumn .menubox2 .submenu2{float:right; line-height:25px; width:80px; margin-right:10px;}
+.main4 .leftcolumn .menubox2 .submenu2 a{color:#606060; font-family:'宋体'; font-size:12px;}
+.main4 .leftcolumn .menubox2 .submenu2 a:hover{color:#be172e;}
+
+.main4 .rightcolumn{width:716px; float:right;}
+.main4 .rightshow h3{width:692px;}
+.main4 .rightshow h3 a{font-size:12px; font-family:'微软雅黑'; color:#797173;}
+.main4 .rightshow h3 a:hover{color:#be172e;}
+.main4 .rightshow h3 .leftA{margin-left:50px;}
+.main4 .rightline{background-image:url(images/clip5_44.png); background-repeat:repeat-x; background-position:bottom;}
+.main4 .rightline .anli{font-family:'微软雅黑'; font-size:16px; color:#000000;}
+.main4 .rightcolumn .lefttiao{float:left;}
+.main4 .rightcolumn .rightshow{float:right;}
+.main4 .rightcolumn .rightshow .picture1{margin-top:18px; display:block;}
+.main4 .rightcolumn .rightshow .picturebox1{margin-top:13px; overflow:hidden; width:685px;}
+.main4 .rightcolumn .rightshow .picturebox1 .picture2{float:left;}
+.main4 .rightcolumn .rightshow .picturebox1 .picture3{float:right; margin-right:14px;}
+.main4 .up1{width:960px; height:900px;}
+/*客户见证*/
+.main5{width:960px;  margin-top:20px;}
+.main5 .topbox{width:960px; height:40px; background-image:url(images/clip5_73.png); background-repeat:repeat-x; background-position:bottom;}
+.main5 .topbox h3 .picture1{margin-left:830px;}
+.main5 .bottombox{width:870px; overflow:hidden; margin:0 auto;}
+.main5 .bottombox .picturebox1{margin-top:15px; margin-left:38px; width:395px; overflow:hidden; float:left;}
+.main5 .bottombox .picturebox1 p{width:250px; margin-left:20px; color:#82817e; font-size:12px; font-family:'宋体'; line-height:20px; float:right; margin-top:40px;}
+.main5 .bottombox .picyurebox1 img{float:left;}
+/*合作伙伴*/
+.partners{ width:960px; margin:0 auto;}
+.partners .current{margin:0 auto; display:block; margin-top:30px;}
+.partners .pb{margin:0 auto; width:960px; margin-top:14px;}
+.partners .pb img{float:left; margin-left:11px;}
+.partners .pb .sb{width:866px;}
+.partners .pb .sb .ssb{width:1772px; }
+.partners .dt{ margin-top:10px;}
+/*关于爱情海*/
+.lovebox{width:960px; margin:0 auto; overflow:hidden; margin-top:10px;}
+.lovebox img{float:left;}
+.lovebox .love{float:right;}
+.lovebox .love .lovesea{font-family:'微软雅黑'; font-size:18px; color:#444444; font-weight:bold; background-image:url(images/clip12_51.png); background-repeat:no-repeat; background-position:bottom; padding-bottom:10px;}
+.lovebox .love .lovesea span{color:#cd174a; font-family:'Arial, Helvetica, sans-serif';}
+.lovebox .love ul{margin-top:20px; width:160px;}
+.lovebox .love ul .pbox{width:160px; height:114px;}
+.lovebox .love ul li{margin-top:5px; font-family:'微软雅黑'; font-size:14px;}
+.lovebox .love .plan{margin-top:15px; width:130px; float:left; margin-right:25px;}
+.lovebox .love .plan dl dt{width:130px; height:141px;}
+.lovebox .love .plan dl dd{width:119px; height:23px; background-image:url(images/clip13_71.png); color:#9d1336; font-family:'宋体'; font-size:12px; text-align:center; margin:0 auto; line-height:23px;}
+/*荣誉资质*/
+.rybox{width:960px; margin:0 auto; margin-top:18px;}
+.rybox .rynav{font-family:'微软雅黑'; font-size:18px; color:black; background-image:url(images/clip12_75.png); background-repeat:no-repeat; background-position:bottom; padding-bottom:8px; margin-bottom:10px;}
+.rybox .jbox{width:960px;}
+.rybox .jbox dl{float:left; margin:0 30px; width:207px;}
+.rybox .jbox .current{margin:0 109px;}
+.rybox .jbox dl dd{text-align:center; font-family:'宋体'; font-size:14px; color:black;}
+/*常见问题*/
+.problembox{width:960px; margin:0 auto;}
+.problembox .meitu{margin:20px 0;}
+.problembox .problem{width:960px; overflow:hidden;}
+.problembox .problem .box1{ float:left; width:266px;}
+.problembox .problem .box1 .wenzi{width:266px; font-family:'微软雅黑'; font-size:18px; color:black; background-image:url(images/clip14_22.png); background-repeat:no-repeat; background-position:bottom; padding-bottom:8px;}
+.problembox .problem .box1 .wen1{background-image:url(images/clip17_30.png); background-repeat:no-repeat; background-position:top; padding-top:13px; margin-top:10px; width:266px;}
+.problembox .problem .box1 .wen1 .neiwen{margin-bottom:15px; margin-left:10px; line-height:22px; font-family:'宋体'; font-size:14px; width:256px;}
+.problembox .problem .box1 .wen1 .neiwen a{color:#222222;}
+.problembox .problem .box1 .wen1 .neiwen a:hover{color:#900;}
+.problembox .problem .box2{float:left; overflow:hidden; margin-top:6px;position:relative; margin-left:18px; width:430px;}
+.problembox .problem .box2 img{float:left;}
+.problembox .problem .box2 .dongbox{float:right; width:400px; }
+.problembox .problem .box2 .dongbox .dong1{font-family:'微软雅黑'; font-size:12px; background-image:url(images/clip14_22.png); background-repeat:repeat-x; background-position:bottom; padding-bottom:8px; width:400px;}
+.problembox .problem .box2 .dongbox .dong1 span{color:red;}
+.problembox .problem .box2 .dongbox .dong2{ margin-top:24px;  position:relative; width:390px;}
+.problembox .problem .box2 .dongbox .dong2 ul img{display:block; margin-right:10px;}
+.problembox .problem .box2 .dongbox .dong2 ul li{padding-top:20px; font-family:'宋体'; font-size:14px; color:#111111; line-height:24px;}
+.problembox .problem .box2 .dongbox .dong2 .p2{ position:absolute; left:346px; top:68px;}
+
+.problembox .problem .box2 .dongbox .dong2 ul{margin-bottom:55px; width:390px;}
+.problembox .problem .box2 .dongbox .dong2 .dikuang{background-color:#e8e8e8; text-align:center; width:390px; padding:10px 0; font-family:'宋体'; font-size:14px; margin-bottom:10px;}
+.problembox .problem .box2 .dongbox .dong2 .dikuang a{color:#222222;}
+.problembox .problem .box2 .dongbox .dong2 .dikuang a:hover{color:#900;}
+/*右3官方微博*/
+.problembox .problem .box3{width:224px; float:right; overflow:hidden; }
+.problembox .problem .box3 img{float:left;}
+.problembox .problem .box3 .guanbox{float:right; width:215px; position:relative;}
+.problembox .problem .box3 .guanbox .guanwei{font-family:'微软雅黑'; font-size:18px; color:#222222; background-image:url(images/clip14_25.png); background-repeat:repeat-x; background-position:bottom; padding-bottom:8px; width:215px;}
+.problembox .problem .box3 .guanbox .weibo{border:solid 1px #CCCCCC; width:213px; margin-top:10px; padding-bottom:148px; background-color:white; background-image:url(images/clip14_35.png); background-repeat:no-repeat; background-position:top;}
+.problembox .problem .box3 .guanbox .weibo h4{font-family:'微软雅黑'; font-size:14px; color:blue; padding-top:10px; padding-bottom:8px; background-image:url(images/clip14_48.png); background-repeat:repeat-x; background-position:bottom; width:213px;}
+.problembox .problem .box3 .guanbox .weibo h4 img{margin:0 10px;}
+.problembox .problem .box3 .guanbox .weibo .noticebox{margin-top:15px; width:213px; background-image:url(images/clip14_48.png); background-repeat:no-repeat; background-position:bottom; padding-bottom:50px;}
+.problembox .problem .box3 .guanbox .weibo .noticebox .aihun{font-family:'宋体'; font-size:14px; color:blue;}
+.problembox .problem .box3 .guanbox .weibo .noticebox img{margin:0 10px;}
+.problembox .problem .box3 .guanbox .weibo .taquan{margin-top:15px;} 
+.problembox .problem .box3 .guanbox .weibo .taquan dl{float:left; margin-bottom:10px; margin-left:16px; width:50px;}
+.problembox .problem .box3 .guanbox .weibo .taquan dl dd{font-family:'微软雅黑'; font-size:12px; color:blue; margin-top:5px; margin-left:13px;  display:block;}
+.problembox .problem .box3 .guanbox .weibo .taquan .fan{font-family:'微软雅黑'; font-size:12px; color:blue; margin-bottom:10px; width:214px;}
+/*高端摄影作品预览*/
+.gaobox{width:960px; margin:0 auto; position:relative; margin-top:26px;}
+.gaobox .gaonav{width:960px; margin:0 auto; font-family:'微软雅黑'; font-size:20px; color:#222222; overflow:hidden; padding-bottom:10px; background-image:url(images/clip19_13.png); background-repeat:repeat-x; background-position:bottom;}
+.gaobox .gaonav .photo1{float:left; margin-top:-5px;}
+.gaobox .gaonav .photo2{float:right; margin-right:15px;}
+.gaobox .gaonav .xs{ float:left; margin-left:12px;}
+.gaobox .picturebox ul{ margin-top:16px; width:185px; float:left; margin-left:50px;}
+.gaobox .picturebox .current{margin-left:35px;}
+.gaobox .picturebox ul li{ text-align:center;}
+.gaobox .getiao{margin-top:12px;}
+.gaobox .pointtiao{position:absolute; left:0; top:33px;}
+.aibox{width:960px; overflow:hidden;}
+.aibox img{float:left;}
+.aibox .xinxi h5{font-family:'微软雅黑'; font-size:14px; color:#cf1133; margin-top:25px;}
+.aibox .xinxi{float:right; width:444px;}
+.aibox .xinxi span{font-size:20px;}
+.aibox .xinxi .picture3{margin-top:10px; margin-left:126px; display:block;}
+.aibox .xinxi .bigkuang{margin-top:80px; width:444px;}
+/*框1*/
+.aibox .xinxi .kuang1{ width:444px; overflow:hidden;}
+.aibox .xinxi .kuang1 .lianxibox{ float:right; margin-right:34px;}
+.aibox .xinxi .kuang1 h5{font-family:'宋体'; font-size:12px; color:#000; float:left; margin-left:12px; margin-top:6px;}
+/*框2*/
+.aibox .xinxi .kuang2{ width:444px; overflow:hidden;}
+.aibox .xinxi .kuang2 img{margin-right:34px; float:right; margin-top:10px;}
+.aibox .xinxi .kuang2 h5{font-family:'宋体'; font-size:12px; color:#000; float:left; margin-left:12px; margin-top:15px;}
+.aibox .xinxi .kuang2 .current{margin-right:47px;}
+.aibox .xinxi .kuang2 .current3{margin-left:25px;}
+.aibox .xinxi .kuang2 .current2{margin-right:206px;}
+.aibox .xinxi .kuang2 .current4{margin-right:154px; margin-top:-20px;}
+.aibox .xinxi .kuang2 .current5{margin-left:298px; margin-top:-20px;}
+.aibox .xinxi .button{margin-left:75px; margin-top:20px;}
+.aibox .xinxi .current6{margin-left:20px;}
+/*友情链接*/
+.linkbox1{width:960px; margin:0 auto; margin-top:10px; position:relative;}
+.linkbox1 .link{width:960px; font-family:'微软雅黑'; font-size:20px; color:#222222; overflow:hidden; padding-bottom:10px; background-image:url(images/clip19_78.png); background-repeat:repeat-x; background-position:bottom;}
+.linkbox1 .link img{margin-top:10px; float:left;}
+.linkbox1 .link span{float:right;}
+.linkbox1 .link .youqing{ margin-right:806px; margin-top:-14px;}
+.linkbox1 .link .rukou{ font-family:'宋体'; font-size:12px; color:#d70c39; margin-right:40px; margin-top:-15px;}
+.linkbox1 .linknav{ width:844px; margin:0 auto; font-family:'宋体'; font-size:12px; color:#555555; margin-top:24px; line-height:34px;}
+.linkbox1 .linknav a{color:#555555;} 
+.linkbox1 .linktiao{position:absolute; left:0; top:46px;}
+/*页脚*/
+.footerbox{width:960px; text-align:center; font-family:'宋体'; font-size:12px; color:white; background-color:#7b7b7b; padding:12px 0; margin-top:79px;}
+.footerbox a{color:white;}
+.lastbox{width:960px; overflow:hidden; margin-top:14px; padding-bottom:80px;}
+.lastbox .footerlogo{float:left; margin-left:92px; margin-top:8px;}
+.lastbox .footerright{float:right; margin-right:220px; font-family:'宋体'; font-size:12px; color:#8f8a8c; line-height:30px;}
+.lastbox .footerright a{color:#8f8a8c;}
+</style>
+<script src="jquery.js"></script>
+<script>
+$(function(){
+	function f(){
+		$(".column").animate({left:-1324},5000,function(){
+			$(".column img:first").insertAfter($(".column img:last"));
+			$(".column").css({left:0});
+	});
+	}
+	setInterval(f,10000);
+	
+})
+
+/*合作伙伴*/
+$(function(){
+	function f(){
+		$(".ssb").animate({left:-866},2000,function(){
+			$(".ssb img:first").insertAfter($(".ssb img:last"));
+			$(".ssb").css({left:0});
+	});
+	}
+	setInterval(f,5000);
+	
+})
+</script>
+<meta charset="utf-8">
+<title>AIQINGHAI婚礼策划</title>
+</head>
+
+<body>
+<!--页眉-->
+<div class="header">
+ <div class="topnav">
+   <div class="logo"></div>
+   <div class="rightnav">
+   登录 | 注册 | 收藏本站 | 网站地图 | 在线预约 | 官方微博
+    <h3><img class="telephone" src="images/clip1'_06.png">&nbsp;咨询热线：<i>400-800-9999</i></h3>
+   </div>
+ </div>
+ <div class="showbox">
+  <div class="column">
+   <img class="banner" src="images/clip1_10.png">
+   <img class="banner" src="images/clip01_02.png">
+   <img class="banner" src="images/clip001_02.png">
+   <img class="banner" src="images/clip04_03.png">
+  </div>
+ </div>
+ <div class="mainnav">
+   <a href="">爱情海首页</a> | 
+   <a href="">高端婚礼策划</a> | 
+   <a href="">年会策划</a> | 
+   <a href="aiqinghai2.html">成功婚庆案例</a> | 
+   <a href="aiqinghai3.html">婚庆视频</a> | 
+   <a href="">婚庆人才培训</a> | 
+   <a href="">关于爱情海</a> | 
+   <a href="">婚礼策划百科</a> | 
+   <a href="">爱情海资讯</a> | 
+   <a href="">联系爱情海</a> 
+ </div>
+</div>
+<!--内容-->
+<div class="container">
+  <div class="main">
+    <div class="main1">
+     <div class="hot">
+      <a class="remen">热门关键词：</a>&nbsp;
+      <a href="">浪漫婚礼策划</a>&nbsp;
+      <a href="">创意婚礼策划</a>&nbsp;
+      <a href="">高端婚礼策划</a>&nbsp;
+      <a href="">特色婚礼策划</a>&nbsp;
+      <a href="">定制婚礼</a>&nbsp;
+      <a href="">南京婚礼定制</a>&nbsp;
+      <a href="">南京婚庆策划</a>&nbsp;
+      <a href="">南京婚礼策划</a>&nbsp;
+     </div>
+     <img src="images/clip1'_16.png">
+     <div class="picturebox">
+      <a href="">
+       <img src="images/clip1_24.png">
+       <div class="shuoming">爱在云端 形影相随（创意婚礼策划）</div>
+      </a>
+       <a class="picture2" href="">
+       <img src="images/clip1_26.png">
+       <div class="shuoming">红颜相随 超然幸福（专属婚礼策划）</div>
+      </a>
+       <a class="picture3" href="">
+       <img src="images/clip1_28.png">
+       <div class="shuoming">蓝色之恋（主题婚礼策划）</div>
+      </a>       
+     </div> 
+    </div>
+    
+    <div class="main2">
+      <img class="hengtiao1" src="images/clip1_33.png">
+      <img class="fashion" src="images/clip1_36.png">
+      <div class="picturebox2">
+       <div class="showbox1">
+        <a href="">
+         <img src="images/clip1_39.png">
+        </a>
+       </div>
+       <div class="showbox2">
+        <a href="">
+         <img src="images/clip1_41.png">
+        </a>
+       </div>
+       <div class="showbox3">
+        <a href="">
+         <img src="images/clip1_43.png">
+        </a>
+       </div>
+      </div>
+      <img class="banner1" src="images/clip1_48.png">
+      <img class="hengtiao2" src="images/clip1_33.png">  
+    </div>
+    <!--选择爱情海婚礼策划  让爱情到永远-->
+    <div class="main3">
+      <img src="images/clip5_07.png">
+      <div class="box1">
+        <img src="images/clip4_10.png">
+        <div class="NO1">
+          <img src="images/clip4_07.png">
+          <div class="jieshao1">
+            <h3>10年婚礼统筹实操经验<br>中国婚庆产业领域中的高端品牌企业</h3>
+            <p>爱情海婚庆策划公司诞生于2004年，历经10年的经营，成为南京婚庆行业<span>屈指可数的高端品牌</span>企业。</p>
+          </div>
+        </div> 
+      </div>
+      
+      <div class="box2">
+        <img src="images/clip4_15.png">
+        <div class="NO2">
+          <img src="images/clip4_18.png">
+          <div class="jieshao2">
+            <h3>有配套的婚庆设备和人员服务</h3>
+            <p>爱情海婚庆策划公司已经有了很多的婚礼经验，具备<span>丰富的设施设备，专业的团队，极致的创新</span>的及完善的客户服务体系保证您的婚礼大气体面、按时举行。</p>
+          </div>
+        </div> 
+      </div>
+      
+      <div class="box3">
+        <img class="xinyu" src="images/clip4_23.png">
+        <div class="NO3">
+          <img src="images/clip4_25.png">
+          <div class="jieshao3">
+            <h3>爱情海已获得国际专业的认可信誉有保障</h3>
+            <p><span>全球最具规模和权威性的婚礼统筹组织</span>——ABC国际婚礼统筹机构吸收罗曼庭为五星级会员</p>
+          </div>
+        </div> 
+      </div>
+      
+      <div class="box4">
+        <img src="images/clip4_30.png">
+        <div class="NO4">
+          <img src="images/clip4_33.png">
+          <div class="jieshao4">
+            <h3>一站式服务 让您省心省力</h3>
+            <p><span>爱情海旗下拥有：爱情海婚纱摄影机构、爱情海婚礼策划机构、爱情海爱情婚礼会馆</span>为有梦想的新人和家庭提供专属的创意婚礼策划，让您享受个性定制带来的尊荣感和幸福感。</p>
+          </div>
+        </div> 
+      </div>
+    </div>
+<!--W——爱情海婚礼策划-->
+    <div class="main4">
+     <div class="up1">
+      <div class="leftcolumn">
+         <img src="images/clip5_41.png">
+         <div class="leftsidenav1">
+           <a href=""><h3><img src="images/clip5_53.png">婚礼服务项目类</h3></a>
+           <div class="menubox1">           
+             <dl class="submenu1">  
+               <dd><a href="">>婚礼咨询</a></dd>
+               <dd><a href="">>婚礼摄影</a></dd>
+               <dd><a href="">>婚礼督导</a></dd>
+               <dd><a href="">>婚礼司仪</a></dd>
+               <dd><a href="">>婚礼跟妆</a></dd>
+               <dd><a href="">>婚礼视频</a></dd>
+               <dd><a href="">>婚礼拍照</a></dd>
+               <dd><a href="">>婚礼花艺</a></dd>
+               <dd><a href="">>婚礼舞美</a></dd>
+               <dd><a href="">>婚礼音响</a></dd>
+               <dd><a href="">>婚礼礼服</a></dd>
+               <dd><a href="">>婚礼用品</a></dd>
+               <dd><a href="">>婚礼定制</a></dd>              
+              </dl>                          
+              <dl class="submenu2">
+               <dd><a href="">>婚礼策划</a></dd>
+               <dd><a href="">>婚礼统筹</a></dd>
+               <dd><a href="">>婚礼布置</a></dd>
+               <dd><a href="">>婚礼化妆</a></dd>
+               <dd><a href="">>婚礼摄像</a></dd>
+               <dd><a href="">>婚礼策划师</a></dd>
+               <dd><a href="">>婚礼跟拍</a></dd>
+               <dd><a href="">>婚礼演艺</a></dd>
+               <dd><a href="">>婚礼灯光</a></dd>
+               <dd><a href="">>婚礼 DJ</a></dd>
+               <dd><a href="">>婚礼道具</a></dd>
+               <dd><a href="">>婚礼租赁</a></dd>
+               <dd><a href="">>婚礼喜糖</a></dd>
+              </dl>             
+           </div>
+         </div>
+      <div class="leftsidenav2">
+           <a href=""><h3><img src="images/clip5_53.png">主题婚礼策划类</h3></a>
+           <div class="menubox2">           
+             <dl class="submenu1">  
+               <dd><a href="">>教堂婚礼策划</a></dd>
+               <dd><a href="">>草坪婚礼策划</a></dd>
+               <dd><a href="">>水上婚礼策划</a></dd>
+               <dd><a href="">>汉唐婚礼策划</a></dd>
+               <dd><a href="">>西式婚礼策划</a></dd>
+               <dd><a href="">>冠军婚礼策划</a></dd>              
+              </dl>             
+              <dl class="submenu2">
+               <dd><a href="">>花园婚礼策划</a></dd>
+               <dd><a href="">>户外婚礼策划</a></dd>
+               <dd><a href="">>古装婚礼策划</a></dd>
+               <dd><a href="">>欧式婚礼策划</a></dd>
+               <dd><a href="">>名人婚礼策划</a></dd>
+               <dd><a href="">>集体婚礼策划</a></dd>
+              </dl>             
+           </div>
+         </div>
+      <div class="leftsidenav2">
+           <a href=""><h3><img src="images/clip5_53.png">生日宴策划类</h3></a>
+           <div class="menubox2">           
+             <dl class="submenu1">  
+               <dd><a href="">>宝宝满月</a></dd>
+               <dd><a href="">>宝宝周岁</a></dd>
+               <dd><a href="">>50-100岁生日</a></dd>              
+              </dl>             
+              <dl class="submenu2">
+               <dd><a href="">>宝宝百天</a></dd>
+               <dd><a href="">>5-40岁生日</a></dd>
+              </dl>             
+           </div>
+         </div>    
+       <div class="leftsidenav2">
+           <a href=""><h3><img src="images/clip5_53.png">摄影服务项目类</h3></a>
+           <div class="menubox2">           
+             <dl class="submenu1">  
+               <dd><a href="">>亲情写真</a></dd>
+               <dd><a href="">>人像摄影</a></dd>
+               <dd><a href="">>全球旅行</a></dd>              
+              </dl>             
+              <dl class="submenu2">
+               <dd><a href="">>婚纱摄影</a></dd>
+               <dd><a href="">>商业摄影</a></dd>
+              </dl>             
+           </div>
+         </div>           
+      </div>
+      <div class="rightcolumn">
+       <img class="lefttiao" src="images/clip6_03.png">
+       <div class="rightshow">
+        <h3 class="rightline"><a class="anli" href="">婚庆案例展示</a>          
+         <a class="leftA" href="">主题婚礼策划类&nbsp;&nbsp;|</a>
+         <a href="">教堂婚礼策划类&nbsp;&nbsp;|</a>
+         <a href="">花园婚礼策划类&nbsp;&nbsp;|</a>
+         <a href="">草坪婚礼策划类&nbsp;&nbsp;|</a>
+         <a href="">户外婚礼策划类</a>        
+        </h3>
+        <a href=""><img class="picture1" src="images/clip5_50.png"></a>
+        <div class="picturebox1">  
+          <a href=""><img class="picture2" src="images/clip5_57.png">
+          <img class="picture3" src="images/clip5_59.png"></a>
+        </div>
+        <div class="picturebox1">  
+          <a href=""><img class="picture2" src="images/clip5_62.png">
+          <img class="picture3" src="images/clip5_64.png"></a>
+        </div>
+       </div>
+      </div>
+      </div>
+      <img class="bottomline" src="images/clip1_33.png">
+    </div>
+   <!--客户见证-->
+   <div class="main5"> 
+     <div class="topbox">
+       <h3>客户见证<img class="picture1" src="images/clip5_70.png"></h3>   
+     </div>
+     <div class="bottombox">
+       <div class="picturebox1">
+         <a href=""><img src="images/clip5_76.png"></a>
+         <p>感谢爱情海，感谢堂堂！没有你们就没有那么美好的充满爱的一天@爱情海婚礼</p>
+       </div>
+       
+        <div class="picturebox1">
+         <a href=""><img src="images/clip5_78.png"></a>
+         <p>经过了好几天的纠结、就该、再纠结，终于把婚礼现场布置方案确定了，@爱情海婚礼，很好，为我们排方案、布置现场、完成我们各种的要求等等······终于好了，有你们在我们放心</p>
+       </div>
+       
+        <div class="picturebox1">
+         <a href=""><img src="images/clip5_82.png"></a>
+         <p>感谢爱情海，感谢堂堂！没有你们就没有那么美好的充满爱的一天@爱情海婚礼</p>
+       </div>
+       
+        <div class="picturebox1">
+         <a href=""><img src="images/clip5_84.png"></a>
+         <p>经过了好几天的纠结、就该、再纠结，终于把婚礼现场布置方案确定了，@爱情海婚礼，很好，为我们排方案、布置现场、完成我们各种的要求等等······终于好了，有你们在我们放心</p>
+       </div>
+     </div>   
+ </div> 
+   <!--合作伙伴--> 
+   <div class="partners">
+     <img class="current" src="images/clip12_03.png">
+     <div class="pb">
+       <img style="margin-top:30px;" src="images/clip12_23.png">
+       <div class="sb">
+        <div class="ssb">
+         <a href=""><img src="images/clip12_09.png"></a>
+         <a href=""><img src="images/clip12_11.png"></a>
+         <a href=""><img src="images/clip12_14.png"></a>
+         <a href=""><img src="images/clip12_16.png"></a>
+         <a href=""><img src="images/clip12_18.png"></a>
+         <a href=""><img src="images/clip12_20.png"></a>
+        </div>
+       </div>
+       <img style="margin-top:30px;" src="images/clip12_26.png">
+     </div>
+     <img class="dt" src="images/clip12_41.png">
+   </div>
+   <!--关于爱情海-->
+   <div class="lovebox">
+     <img src="images/clip12_47.png">
+     <div class="love">
+       <div class="lovesea"><span>Abous us</span> 关于爱情海</div>
+       <ul>  
+         <a href=""><div class="pbox"><img src="images/clip12_54.png"></div></a>
+         <li><--咨询--></li>
+       </ul>
+      <div class="planbox">
+      <!--婚礼策划师1--> 
+       <div class="plan">
+         <dl>
+           <a href=""><dt><img src="images/clip12_58.png"></dt>
+           <dd>婚礼策划师：恋恋</dd></a>
+         </dl>
+       </div>
+       <!--婚礼策划师1--> 
+       <div class="plan">
+         <dl>
+           <a href=""><dt><img src="images/clip12_60.png"></dt>
+           <dd>婚礼策划师：恋恋</dd></a>
+         </dl>
+       </div>
+       <!--婚礼策划师1--> 
+       <div class="plan">
+         <dl>
+           <a href=""><dt><img src="images/clip12_62.png"></dt>
+           <dd>婚礼策划师：恋恋</dd></a>
+         </dl>
+       </div>
+       <!--婚礼策划师1--> 
+       <div class="plan">
+         <dl>
+           <a href=""><dt><img src="images/clip12_64.png"></dt>
+           <dd>婚礼策划师：恋恋</dd></a>
+         </dl>
+       </div>
+      </div>         
+     </div>
+   </div>
+   <!--荣誉资质-->
+   <div class="rybox">
+     <div class="rynav">荣誉资质</div>
+     <div class="jbox">
+      <!--证1-->
+      <a href=""><dl>
+       <dt><img src="images/clip12_78.png"></dt>
+       <dd>中国浪漫产业巾帼领袖</dd>
+      </dl></a>
+        <!--证1-->
+      <a href=""><dl class="current">
+       <dt><img src="images/clip12_80.png"></dt>
+       <dd>中国婚庆发展奖</dd>
+      </dl></a>
+       <!--证1-->
+      <a href=""><dl>
+       <dt><img src="images/clip12_82.png"></dt>
+       <dd>ABC证书</dd>
+      </dl></a>      
+     </div>
+   </div>
+   
+   <!--常见问题-->
+   <div class="problembox">
+     <img class="meitu" src="images/clip15_03.png">
+     <div class="problem">
+       <div class="box1">
+         <div class="wenzi">婚礼常见问题</div>
+         <!--问1-->
+         <div class="wen1">
+            <div class="neiwen"><img src="images/clip16_44.png">&nbsp;<a href="">草坪婚礼策划需要了解事项有哪些？</a></div>
+            <div class="neiwen"><img src="images/clip16_58.png">&nbsp;婚礼应该追求自己的个性与另类，打造属于自己特有的婚礼。</div>
+         </div>
+          <!--问1-->
+         <div class="wen1">
+            <div class="neiwen"><img src="images/clip16_44.png">&nbsp;<a href="">爱情海个性婚庆策划教你搞定婚礼？</a></div>
+            <div class="neiwen"><img src="images/clip16_58.png">&nbsp;爱情海个性婚庆策划，您梦想中的婚礼。</div>
+         </div>
+          <!--问1-->
+         <div class="wen1">
+            <div class="neiwen"><img src="images/clip16_44.png">&nbsp;<a href="">南京定制婚礼找爱情海，为你打造梦幻婚礼。</a></div>
+            <div class="neiwen"><img src="images/clip16_58.png">&nbsp;定制婚礼找爱情海，打造梦幻婚礼。</div>
+         </div>
+       </div>
+       <!--右2-->
+       <div class="box2">
+         <img src="images/clip14_09.png">
+         <div class="dongbox">
+           <div class="dong1">最新动态&nbsp;<span>|</span>&nbsp;婚礼知识</div>
+           <img style="position:absolute; left:28px; top:24px;" src="images/clip14_20.png">
+           <div class="dong2">
+             <a href=""><ul><img class="p1" src="images/clip14_41.png">
+               <li>今天具有10年婚礼督导实战经验、百万婚礼钦点督导</li>
+             </ul></a>
+             <img class="p2" src="images/clip14_65.png">
+             <div class="dikuang"><a href="">如何成为最专业的婚礼督导？</a></div>
+             <div class="dikuang"><a href="">实战婚礼销售部培训课程</a></div>
+             <div class="dikuang"><a href="">海外婚礼为何选择毛里求斯？</a></div>
+             <div class="dikuang"><a href="">海外婚礼毛里求斯爱蜜行婚典之旅</a></div>
+           </div>
+         </div>
+       </div>
+       <!--右3-->
+       <div class="box3">
+         <img src="images/clip14_09.png">
+         <div class="guanbox">  
+           <div class="guanwei">&nbsp;&nbsp;官方微博</div>
+           <div class="weibo">
+              <img style="position:absolute; left:144px; top:97px;" src="images/clip14_56.png">
+             <h4><img src="images/clip18_39.png">微博</h4>
+             <ul class="noticebox">
+               <li><a href=""><img src="images/clip14_53.png"></a></li>
+               <li style="width:143px;">
+               <div class="aihun">爱情海婚礼</div>
+               </li>
+               <li><img style="margin:0 auto; margin-top:10px;" src="images/clip14_62.png"></li>
+             </ul>
+             <div class="taquan">
+               <div class="fan">&nbsp;&nbsp;&nbsp;TA的粉丝(3000)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 全部》</div>
+               <dl>
+                 <dt>
+                 <img src="images/clip14_72.png">
+                 </dt>
+                 <dd>娜娜</dd>
+               </dl>
+               <dl>
+                 <dt>
+                 <img src="images/clip14_72.png">
+                 </dt>
+                 <dd>娜娜</dd>
+               </dl>
+               <dl>
+                 <dt>
+                 <img src="images/clip14_72.png">
+                 </dt>
+                 <dd>娜娜</dd>
+               </dl>
+               <dl>
+                 <dt>
+                 <img src="images/clip14_72.png">
+                 </dt>
+                 <dd>娜娜</dd>
+               </dl>
+               <dl>
+                 <dt>
+                 <img src="images/clip14_72.png">
+                 </dt>
+                 <dd>娜娜</dd>
+               </dl>
+               <dl>
+                 <dt>
+                 <img src="images/clip14_72.png">
+                 </dt>
+                 <dd>娜娜</dd>
+               </dl>              
+             </div>
+           </div>
+         </div>  
+       </div>
+     </div>
+   </div>
+ <!--高端摄影工作室作品预览-->
+   <div class="gaobox">
+     <div class="gaonav"><img class="photo1" src="images/clip19_03.png"><span class="xs">高端摄影工作室作品预览</span><img class="photo2" src="images/clip19_06.png"></div>
+     <img class="pointtiao" src="images/clip19_11.png">
+     <div class="picturebox">
+       <!--片1-->
+       <ul class="current">
+         <a href=""><li><img src="images/clip19_18.png"></li>
+         <li><img src="images/clip20_03.png"></li></a>
+       </ul>
+        <!--片1-->
+       <ul>
+         <a href=""><li><img src="images/clip19_20.png"></li>
+         <li><img src="images/clip20_05.png"></li></a>
+       </ul>
+        <!--片1-->
+       <ul>
+         <a href=""><li><img src="images/clip19_22.png"></li>
+         <li><img src="images/clip20_07.png"></li></a>
+       </ul>
+        <!--片1-->
+       <ul>
+         <a href=""><li><img src="images/clip19_24.png"></li>
+         <li><img src="images/clip20_09.png"></li></a>
+       </ul>
+     </div>
+     <img class="getiao" src="images/clip19_42.png">
+   </div>
+   <!--精美礼品一栏-->
+   <div class="aibox">
+     <img src="images/clip19_44.png">
+     <img src="images/clip19_45.png">
+     <div class="xinxi">
+       <h5>
+         <span>2014</span>秋季婚博会报名开始，立即留下联系方式！
+       </h5>
+       <img class="picture3" src="images/clip19_48.png">
+      <div class="bigkuang"> 
+       <!--框1-->
+       <div class="kuang1"><h5>联&nbsp;系&nbsp;人：</h5><img class="lianxibox" src="images/clip19_52.png"></div>
+       <!--框2-->
+       <div class="kuang2"><h5>联系电话：</h5><img src="images/clip19_52.png"></div>
+       <!--框2-->
+       <div class="kuang2"><h5>电子邮箱：</h5><img src="images/clip19_52.png"></div>
+       <!--框2-->
+       <div class="kuang2"><h5>信息备注：</h5><img class="current" src="images/clip19_55.png"></div>
+       <!--框2-->
+       <div class="kuang2"><h5 class="current3">验证码：</h5><img class="current2" src="images/clip19_58.png"><img class="current4" src="images/clip19_61.png"><h5 class="current5">刷新</h5></div>
+       <img class="button" src="images/clip19_66.png">
+       <img class="button current6" src="images/clip19_68.png">
+       </div>
+     </div>
+   </div>
+      <!--友情链接-->
+   <div class="linkbox1">
+     <div class="link">
+        <img src="images/clip19_73.png">&nbsp;&nbsp;
+        <span class="youqing">友情链接</span>
+        <a href=""><span class="rukou">+申请入口</span></a>
+     </div>
+     <div class="linknav">
+       <a href="">山东婚庆公司</a>&nbsp;|
+       <a href="">高端婚礼定制</a>&nbsp;|
+       <a href="">主题婚礼策划</a>&nbsp;|
+       <a href="">浪漫婚礼策划</a>&nbsp;|
+       <a href="">南京婚礼策划</a>&nbsp;|
+       <a href="">深圳婚庆公司</a>&nbsp;|
+       <a href="">沈阳婚纱摄影</a>&nbsp;|
+       <a href="">结婚社区</a>&nbsp;|
+       <a href="">婚礼定制永久</a>&nbsp;|
+       <a href="">徐州婚庆公司</a>&nbsp;|
+       <a href="">深圳婚纱摄影</a>&nbsp;|
+       <a href="">红酒定制</a>&nbsp;|
+       <a href="">葡萄酒加盟</a>&nbsp;|
+       <a href="">办喜酒</a>
+     </div>
+     <img class="linktiao" src="images/clip19_76.png">   
+   </div>
+   <!--页脚-->
+   <div class="footerbox">
+     <a href="">关于爱情海</a>&nbsp;|
+     <a href="">高端婚礼定制</a>&nbsp;|
+     <a href="">特色婚礼策划</a>&nbsp;|
+     <a href="">创意婚礼策划</a>&nbsp;|
+     <a href="">企业年会策划</a>&nbsp;|
+     <a href="">成功案例</a>&nbsp;|
+     <a href="">诚聘英才</a>&nbsp;|
+     <a href="">在线预约</a>&nbsp;|
+     <a href="">网站地图</a>&nbsp;|
+     <a href="">联系爱情海</a>&nbsp;|
+   </div>
+   <div class="lastbox">
+     <img class="footerlogo" src="images/clip19_83.png">
+     <div class="footerright">
+       <div class="lastnav">
+         <a href="">南京婚庆公司</a>&nbsp;|
+         <a href="">婚礼策划公司</a>&nbsp;|
+         <a href="">高端婚庆公司</a>&nbsp;|
+         <a href="">个性婚庆公司</a>&nbsp;|
+         <a href="">主题婚礼策划</a>
+       </div>
+       <div>南京爱情海文化传媒有限公司 版权所有 备案号:苏ICP备11055885号</div>
+       <div>爱情海预约电话 400-800-9999 电话：025-86635665 邮箱：35653328723@qq.com</div>
+       <div>爱情海婚礼策划公司地址：江苏省南京市秦淮区中山南路236号</div>
+     </div>
+   </div>
+       
+  </div>
+  <img class="tiaozi" src="images/clip00.png">
+</div>
+</body>
+</html>

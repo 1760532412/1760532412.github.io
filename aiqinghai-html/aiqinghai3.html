@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<style>
+/*标签属性重置*/
+body,h6,dl,dd,h3,p,ul,li,p{margin:0; font-weight:normal; padding:0;}
+a{text-decoration:none;}
+img{border:none 0}
+li{list-style:none;}
+/*页眉*/
+.header{width:1324px; margin:0 auto;}
+.header .logobox{width:1324px;  margin:0 auto; overflow:hidden;}
+.header .logobox .ph1{float:left; margin-left:140px; margin-top:20px;}
+.header .logobox .logobox1{float:right; width:340px; margin-right:140px; margin-top:28px;}
+.header .logobox .logobox1 .logonav{font-family:'宋体'; font-size:12px;}
+.header .logobox .logobox1 .logonav a{color:#717172;}
+.header .logobox .logobox1 .logonav a:hover{color:blue;}
+.header .logobox .logobox1 .tp{margin-top:15px; color:#d4003b; margin-left:54px;}
+.header i{font-size:24px; font-weight:bold; font-family:Arial, Helvetica, sans-serif;} 
+.header .showbox{width:1324px; margin:0 auto;}
+.header .showbox .column{width:2648px; height:610px; margin:0 auto;}
+.header .banner{float:left;}
+.header .mainnav{ background-image:url(images/clip_12.png);font-family:'微软雅黑'; font-size:14px; text-align:center; padding:12px 0;}
+.header .mainnav a{ color:white;}
+.header .mainnav a:hover{color:blue;}
+.header .mainnav .navline{margin:0 15px;}
+/*主体*/
+.container{width:100%; background-color:#ede8ee;}
+.container .maincontainer{width:960px; background-color:#fff5f9; margin:0 auto; position:relative;}
+.container .maincontainer .hotbox .hot{font-family:'宋体'; font-size:12px; padding-top:10px;}
+.container .maincontainer .hotbox .hot .remen{color:#d4003b;}
+.container .maincontainer .hotbox .hot a{color:#595959;}
+.container .maincontainer .hotbox .hot a:hover{color:#d4003b;}
+.container .maincontainer .hotbox .hot .searchbox{border:solid 1px #cec7c9; width:195px; height:22px; background-color:white; padding-left:5px; font-size:12px; font-family:'宋体'; color:#7c7c7c; line-height:22px; position:absolute; left:664px;top:5px;}
+.container .maincontainer .hotbox{position:relative;}
+.container .maincontainer .hotbox .hot .searchbutton{width:50px; height:22px; background-color:#7c7c7c; color:white; font-family:'微软雅黑'; font-size:12px; text-align:center; line-height:22px; position:absolute; left:875px; top:5px;}
+.container .maincontainer .hotbox .case{width:358px; height:48px; position:relative;}
+.container .maincontainer .hotbox .case .casepicture{margin-top:15px;}
+.container .maincontainer .shoucase{position:absolute; left:212px; top:26px; font-family:'微软雅黑'; font-weight:bold; color:#555253;}
+.container .jiatiao{position:absolute; left:-10px; top:90px;}
+/*正文左最新动态*/
+.container .maincontainer{overflow:hidden;} 
+.container .maincontainer .hotbox .mainbox .leftbigbox{width:200px; float:left;}
+.container .maincontainer .hotbox .mainbox .leftbox{width:188px; margin-top:31px; padding-top:15px; padding-left:10px; border:solid 1px #d5d5d5;}
+.container .maincontainer .hotbox .mainbox .leftbox dl dd{margin-bottom:18px; background-image:url(images/clip_32.png); background-repeat:no-repeat; background-position:bottom; font-family:'微软雅黑'; font-size:14px;}
+.container .maincontainer .hotbox .mainbox .leftbox dl dd a{color:#666666;}
+.container .maincontainer .hotbox .mainbox .leftbox dl dd a:hover{color:#d4003b;background-image:url(images/clip_47.png); background-repeat:no-repeat; background-position:left;}
+.container .maincontainer .hotbox .mainbox .leftbox dl dd .current{color:#d4003b; background-image:url(images/clip_47.png); background-repeat:no-repeat; background-position:left;}
+.container .maincontainer .hotbox .mainbox .leftbigbox .redblock{ width:200px; height:47px; background-image:url(images/clip_12.png); margin-top:10px;}
+.container .maincontainer .hotbox .mainbox .sybox{width:200px; border:solid 1px #d5d5d5;} 
+.container .maincontainer .hotbox .mainbox .sybox ul{margin-left:16px; margin-top:10px;}
+.container .maincontainer .hotbox .mainbox .sybox a ul .pk{width:168px; height:98px;}
+.container .maincontainer .hotbox .mainbox .sybox a ul .pk:hover{border:solid 1px #CC0000;}
+.container .maincontainer .hotbox .mainbox .sybox ul li{margin-left:30px; font-family:'宋体'; font-size:12px; color:#666666; margin-top:5px;}
+/*左2红块*/
+.container .maincontainer .hotbox .mainbox .contactbox{width:200px; border:solid 1px #d5d5d5;}
+.container .maincontainer .hotbox .mainbox .contactbox ul{margin-left:7px; margin-top:10px;}
+.container .maincontainer .hotbox .mainbox .contactbox ul li{ font-family:'宋体'; font-size:12px; color:#666666; margin-top:5px;} 
+.container .maincontainer .hotbox .mainbox .contactbox ul li .contactmessage{width:160px; line-height:20px; margin:0 auto;}
+/*右2正文*/
+.container .maincontainer .hotbox .mainbox .rightbigbox{float:right; width:754px; margin-top:50px; border:solid 1px #d5d5d5;}
+.container .maincontainer .hotbox .mainbox .rightbigbox .rightbox{margin-top:15px; margin-left:15px; padding-bottom:18px; background-image:url(images/clip_32.png); background-repeat:repeat-x; background-position:bottom; overflow:hidden;}
+.container .maincontainer .hotbox .mainbox .rightbigbox .rightbox p{float:right; font-family:'宋体'; font-size:12px; color:#666666; margin-top:28px; margin-right:178px; width:248px;}
+.container .maincontainer .hotbox .mainbox .rightbigbox .rightbox img{float:left;}
+/*页脚*/
+.container .footer{width:960px; background-color:#fff5f9; margin:0 auto; padding-top:20px;}
+.container .footer .bottomnav{width:960px; text-align:center; padding:10px 0; margin:0 auto; background-color:#7b7b7b; font-family:'微软雅黑'; font-size:12px; color:white;}
+.container .footer .bottomnav a{font-family:'微软雅黑'; font-size:12px; color:white;}
+.container .footer .bottomnav a:hover{color:blue;}
+.container .footer .lastbox{width:660px; margin:0 auto; margin-top:16px; overflow:hidden;}
+.container .footer .lastbox .lastpt{float:left;}
+.container .footer .lastbox .lastnav{float:right; font-size:12px; color:#666666; line-height:25px; padding-bottom:50px;}
+.container .footer .lastbox .lastnav a{font-family:'微软雅黑'; font-size:12px; color:#666666;}
+</style>
+<meta charset="utf-8">
+<title>AIQINGHAI婚礼策划</title>
+</head>
+
+<body>
+<!--页眉-->
+<div class="header">
+ <div class="logobox">
+  <img class="ph1" src="images/clip1_03.png"> 
+  <div class="logobox1">
+    <div class="logonav">
+      <a href="">登录</a>&nbsp;|
+      <a href="">注册</a>&nbsp;|
+      <a href="">收藏本站</a>&nbsp;|
+      <a href="">网站地图</a>&nbsp;|
+      <a href="">在线预约</a>&nbsp;|
+      <a href="">官方微博</a>
+    </div>
+    <h3 class="tp">
+      <img class="ph2" src="images/clip1'_06.png">&nbsp;咨询热线：<i>400-800-9999</i>
+    </h3>
+  </div>
+ </div>
+ <div class="showbox">
+  <div class="column">
+    <img class="banner" src="images/clip3_02.png">
+  </div>
+ </div>
+ <div class="mainnav">
+   <a href="aiqinghai1.html">爱情海首页</a><img class="navline" src="images/clip_15.png">
+   <a href="">高端婚礼策划</a><img class="navline" src="images/clip_15.png">
+   <a href="">年会策划</a><img class="navline" src="images/clip_15.png">
+   <a href="aiqinghai2.html">成功婚庆案例</a><img class="navline" src="images/clip_15.png">
+   <a href="aiqinghai3.html">婚庆视频</a><img class="navline" src="images/clip_15.png">
+   <a href="">婚庆人才培训</a><img class="navline" src="images/clip_15.png">
+   <a href="">关于爱情海</a><img class="navline" src="images/clip_15.png">
+   <a href="">婚礼策划百科</a><img class="navline" src="images/clip_15.png">
+   <a href="">爱情海资讯</a><img class="navline" src="images/clip_15.png">
+   <a href="">联系爱情海</a>
+ </div>
+</div> 
+<!--主体-->
+<div class="container">
+  <div class="maincontainer">
+    <div class="hotbox">
+      <div class="hot">
+        <a class="remen">热门关键词：</a>
+        <a href="">企业年会策划</a>&nbsp;
+        <a href="">庆典活动</a>&nbsp;
+        <a href="">高端婚礼策划</a>&nbsp;
+        <a href="">特色婚礼策划</a>&nbsp;
+        <a href="">户外婚礼策划</a>&nbsp;
+        <a href="">教堂婚礼策划</a>&nbsp;
+        <a href="">草坪婚礼策划</a>&nbsp;
+        <div class="searchbox">请输入您要搜索的关键字</div>
+        <div class="searchbutton">搜索</div>
+      </div>
+      <div class="case"><img class="casepicture" src="images/clip_20.png">
+      <h3 class="shoucase">首页》婚庆视频</h3>
+      </div>
+      <!--正文-->
+      <div class="mainbox">
+      <!--左最新动态-->
+        <div class="leftbigbox">
+         <div class="leftbox">
+          <dl>
+            <dd><a href="">&nbsp;&nbsp;最新动态</a></dd>
+            <dd><a href="">&nbsp;&nbsp;高端摄影工作室作品展览</a></dd>
+            <dd><a href="">&nbsp;&nbsp;客户见证</a></dd>
+            <dd><a href="">&nbsp;&nbsp;合作伙伴</a></dd>
+            <dd><a href="">&nbsp;&nbsp;荣誉资质</a></dd>
+            <dd><a href="">&nbsp;&nbsp;媒体新闻</a></dd>
+            <dd><a href="">&nbsp;&nbsp;专家团队</a></dd>
+            <dd><a href="">&nbsp;&nbsp;成功案例</a></dd>
+            <dd><a class="current" href="">&nbsp;&nbsp;婚庆视频</a></dd>
+          </dl>
+         </div>
+         <!--左1小红块条-->
+         <div class="redblock"></div>
+         <div class="sybox">
+           <a href="aiqinghai22sheying.html"><ul><div class="pk"><img src="images/clip_52.png"></div>
+               <li>婚礼摄影：徐帆</li>
+              </ul>
+           </a>
+           <a href="aiqinghai22sheyingniao.html"><ul><div class="pk"><img src="images/clip_57.png"></div>
+                <li>婚礼摄影：尼奥</li>
+              </ul>
+           </a>
+           <a href="aiqinghai22sheyinganna.html"><ul><div class="pk"><img src="images/clip_60.png"></div>
+               <li>婚礼摄影：安娜</li>
+              </ul>
+           </a>
+         </div> 
+         <!--左2小红块条-->
+         <div class="redblock"></div>
+         <div class="contactbox">
+           <ul><img src="images/clip_65.png">
+             <li><div class="contactmessage">南京爱情海文化传媒有限公司
+                 <br>400电话：400-800-9999 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;025-86566223
+                 <br>公司传真：025-86566222
+                 <br>公司地址：江苏省南京市秦淮区中山南路236号</div>
+             </li>
+           </ul>          
+         </div>   
+        </div>
+        <!--右2正文-->
+        <div class="rightbigbox">
+        <!--右边一个照片信息-->
+          <div class="rightbox">
+              <a href=""><img src="images/clip3_05.png" title="幸福时刻"></a>
+              <p>幸福时刻</p> 
+          </div>
+          <!--右边一个照片信息-->
+          <div class="rightbox">
+              <a href=""><img src="images/clip3_08.png" title="同心永结"></a>
+              <p>同心永结</p> 
+          </div>
+          <!--右边一个照片信息-->
+          <div class="rightbox">
+              <a href=""><img src="images/clip3_10.png" title="喜结良缘"></a>
+              <p>喜结良缘</p> 
+          </div>
+          <!--右边一个照片信息-->
+          <div class="rightbox">
+              <a href=""><img src="images/clip3_12.png" title="温馨时刻"></a>
+              <p>温馨时刻</p> 
+          </div>
+         
+        </div>
+      </div>
+    </div>
+    <img class="jiatiao" src="images/clip_28.png">
+    
+  </div>
+  <div class="footer">
+      <div class="bottomnav">
+        <a href="">关于爱情海</a>&nbsp;|
+        <a href="">高端婚礼定制</a>&nbsp;|
+        <a href="">特色婚礼策划</a>&nbsp;|
+        <a href="">创意婚礼策划</a>&nbsp;|
+        <a href="">企业年会策划</a>&nbsp;|
+        <a href="">成功案例</a>&nbsp;|
+        <a href="">诚聘英才</a>&nbsp;|
+        <a href="">在线预约</a>&nbsp;|
+        <a href="">网站地图</a>&nbsp;|
+        <a href="">联系爱情海</a>
+      </div>
+      <div class="lastbox">
+        <img style="lastpt" src="images/clip_03.png">
+        <div class="lastnav">
+          <a href="">南京婚庆公司</a>&nbsp;|
+          <a href="">婚礼策划公司</a>&nbsp;|
+          <a href="">高端婚庆公司</a>&nbsp;|
+          <a href="">个性婚庆公司</a>&nbsp;|
+          <a href="">主题婚礼策划</a>&nbsp;
+          <br>南京爱情海文化传媒有限公司&nbsp;版权所有&nbsp;备案号：苏ICP备11055885号
+          <br>爱情海预约电话：400-800-9999&nbsp;电话：025-86635665&nbsp;邮箱：35653328723@qq.com
+          <br>爱情海婚礼策划公司地址：江苏省南京市秦淮区中山南路236号
+        </div>
+      </div>
+  </div> 
+</div>
+</body>
+</html>
